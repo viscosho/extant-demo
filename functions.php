@@ -32,6 +32,21 @@ if ( ! function_exists( 'extant_demo_setup' ) ) :
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
+		// Add support for full and wide align images.
+		add_theme_support( 'align-wide' );
+
+		// Add support for styling blocks.
+		add_theme_support( 'wp-block-styles' );
+
+		// Add support for responsive embedded content.
+		add_theme_support( 'responsive-embeds' );
+
+		// Add support for Custom Line Heights.
+		add_theme_support( 'custom-line-height' );
+		
+		// Add support for Custom Units.
+		add_theme_support( 'custom-units' );
+
 		/*
 		 * Let WordPress manage the document title.
 		 * By adding theme support, we declare that this theme does not use a
