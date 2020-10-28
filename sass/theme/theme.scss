@@ -72,7 +72,7 @@ table {
 		color: #1C97CA;
 		font-size: 40px;
 		font-weight: 100;
-		padding: 20px0;
+		padding: 20px 0;
 		display: block;
 		letter-spacing: 4px;
 		text-transform: uppercase;
@@ -109,8 +109,10 @@ table {
 }
 
 .banner {
-	background: url(images/picjumbo-bg5.png) no-repeat fixed 0% (0% / cover);
-	padding: 150px0;
+	color: white;
+	background-image: url(assets/img/picjumbo-bg5.png);
+	background-size: cover;
+	padding: 150px 0;
 	cursor: default;
 }
 
@@ -189,12 +191,12 @@ table {
 .desc {
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
-	padding: 80px0;
+	padding: 80px 0;
 
 	h2 {
 	font-size: 30px;
 	font-weight: 600;
-	padding: 15px0;
+	padding: 15px 0;
 	}
 
 	p {
@@ -209,7 +211,7 @@ table {
 }
 
 .features {
-	padding: 80px0;
+	padding: 80px 0;
 	background-color: #24436d;
 	float: left;
 	width: 100%;
@@ -237,7 +239,7 @@ p.box-desc {
 }
 
 .features-section ul {
-	margin: 50px0;
+	margin: 50px 0;
 
 	li {
 	width: 360px;
@@ -288,7 +290,7 @@ p.box-desc {
 }
 
 .stories {
-	padding: 80px0;
+	padding: 80px 0;
 	float: left;
 	width: 100%;
 	background: #f1f1f1;
@@ -296,7 +298,7 @@ p.box-desc {
 
 .stories-section ul li {
 	width: 318px;
-	margin: 40px 20px0;
+	margin: 40px 20px 0;
 	border-radius: 5px;
 	background-color: #fff;
 	float: left;
@@ -324,7 +326,7 @@ p.box-desc {
 	border-bottom-right-radius: 5px;
 	border-top: none;
 	text-align: center;
-	padding: 10px0 20px;
+	padding: 10px 0 20px;
 
 	h4 {
 	color: #4E4F4F;
@@ -344,11 +346,11 @@ p.box-desc {
 }
 
 .stories-section ul li:hover {
-	box-shadow:00 6px0 #ccc;
+	box-shadow:00 6px 0 #ccc;
 }
 
 .contact {
-	padding: 80px0;
+	padding: 80px 0;
 	width: 100%;
 	float: left;
 	font-family: 'Open Sans', sans-serif;
@@ -440,7 +442,7 @@ form {
 	width: 100%;
 	background-color: #373A42;
 	float: left;
-	padding: 50px0;
+	padding: 50px 0;
 	text-align: center;
 
 	p.copyright {
@@ -538,7 +540,7 @@ ul.socialmedia li a {
 
 .responsive-menu-button {
 	float: right;
-	padding: 24px0;
+	padding: 24px 0;
 }
 
 #mobile-header {
@@ -550,6 +552,16 @@ ul.socialmedia li a {
 .bx-wrapper {
 	box-shadow: none;
 	margin-bottom: 0;
+
+	// .bg-slider-img {
+	// 	position: absolute;
+	// 	z-index: 1;
+	// }
+
+	// .container {
+	// 	position: relative;
+	// 	z-index: 2;
+	// }
 }
 
 //Responsive
@@ -581,7 +593,7 @@ ul.socialmedia li a {
 	}
 
 	.banner {
-	padding: 100px0;
+	padding: 100px 0;
 	}
 
 	.big-text {
@@ -631,7 +643,7 @@ ul.socialmedia li a {
 	}
 
 	.banner {
-	padding: 140px0;
+	padding: 140px 0;
 	}
 
 	.big-text {
@@ -682,7 +694,7 @@ ul.socialmedia li a {
 	}
 
 	.banner {
-	padding: 140px0;
+	padding: 140px 0;
 	}
 
 	.big-text {
@@ -701,7 +713,7 @@ ul.socialmedia li a {
 	}
 
 	.desc {
-	padding: 60px0;
+	padding: 60px 0;
 
 	h2 {
 		font-size: 22px;
@@ -729,7 +741,7 @@ ul.socialmedia li a {
 	}
 
 	.features, .stories, .contact {
-	padding: 140px0;
+	padding: 140px 0;
 	}
 }
 
@@ -741,7 +753,7 @@ ul.socialmedia li a {
 	}
 
 	.banner {
-	padding: 140px0;
+	padding: 140px 0;
 	}
 
 	.big-text {
@@ -760,7 +772,7 @@ ul.socialmedia li a {
 	}
 
 	.desc {
-	padding: 60px0;
+	padding: 60px 0;
 
 	h2 {
 		font-size: 22px;
@@ -789,7 +801,7 @@ ul.socialmedia li a {
 	}
 
 	.features, .stories, .contact {
-	padding: 140px0;
+	padding: 140px 0;
 	}
 }
 
@@ -801,7 +813,7 @@ ul.socialmedia li a {
 	}
 
 	.banner {
-	padding: 140px0 60px;
+	padding: 140px 0 60px;
 	}
 
 	.big-text {
@@ -828,7 +840,7 @@ ul.socialmedia li a {
 	}
 
 	.desc {
-	padding: 60px0;
+	padding: 60px 0;
 
 	h2 {
 		font-size: 22px;
@@ -841,7 +853,7 @@ ul.socialmedia li a {
 	}
 
 	.features {
-	padding: 140px0;
+	padding: 140px 0;
 	}
 
 	.features-section ul li {
@@ -861,7 +873,7 @@ ul.socialmedia li a {
 	}
 
 	.stories {
-	padding: 140px0;
+	padding: 140px 0;
 	}
 
 	.stories-section ul li {
@@ -876,11 +888,11 @@ ul.socialmedia li a {
 	}
 
 	.features, .stories {
-	padding: 60px0;
+	padding: 60px 0;
 	}
 
 	.contact {
-	padding: 140px0;
+	padding: 140px 0;
 	}
 
 	.contact-section {
@@ -910,7 +922,7 @@ ul.socialmedia li a {
 	}
 
 	.banner {
-	padding: 160px0 80px;
+	padding: 160px 0 80px;
 	}
 
 	.menu {

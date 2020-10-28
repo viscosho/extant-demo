@@ -16,8 +16,6 @@ class ExtantDemo_Movies {
 		add_action( 'admin_init', array( $this, 'extant_add_movie_meta_boxes' ) );
 		add_action( 'save_post', array( $this, 'extant_save_movie_meta_boxes' ) );
 		
-
-		//add_action( 'admin_enqueue_scripts', array( $this, 'assets' ) );
 	}
 
 	/**
@@ -213,17 +211,6 @@ class ExtantDemo_Movies {
 		</label>
 		<input type="text" id="extant_movie_link_new_field" name="extant_movie_link_new_field" value="<?php echo esc_attr( $value ); ?>" size="100" />
 		<?php
-	}
-
-
-	public function assets() {
-		//wp_enqueue_media();
-		// wp_enqueue_script( 'media-upload' );
-		// wp_enqueue_script( 'thickbox' );
-		// wp_enqueue_style( 'thickbox' );
-
-		// wp_enqueue_script( 'lsx-movie-admin', LSX_TEAM_URL . 'assets/js/lsx-movie-admin.min.js', array( 'jquery' ), LSX_TEAM_VER );
-		// wp_enqueue_style( 'lsx-movie-admin', LSX_TEAM_URL . 'assets/css/lsx-movie-admin.css', array(), LSX_TEAM_VER );
 	}
 
 }

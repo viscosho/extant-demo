@@ -34,6 +34,21 @@ function extant_bxslider_shortcode( $atts ) {
 				</div>
 			</div>
 		</div>
+		<div class="banner">
+			<div class="container">
+				<div class="header-text">
+					<p class="big-text">Another Banner</p>
+					<h2>Extant Your Creative Thoughts</h2>
+					<p class="small-text">Extant is a free html5 template designed by <a href="www.html5layouts.com">HTML5 Layouts</a> and released under common creative licence 3.0</p>
+					<div class="button-section">
+						<ul>
+							<li><a href="#" class="top-button white">Learn More</a></li>
+							<li><a href="#" class="top-button green">Get Started</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- <div><img src="assets/img/picjumbo-bg5.png" title="Funky roots"></div>
 		<div><img src="/assets/img/picjumbo-bg5.png" title="The long and winding road"></div>
 		<div><img src="/assets/img/picjumbo-bg5.png" title="Happy trees"></div> -->
