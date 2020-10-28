@@ -160,10 +160,12 @@ function extant_demo_scripts() {
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/vendor/css/font-awesome.css', array(), _S_VERSION );
 	wp_style_add_data( 'fontawesome', 'rtl', 'replace' );
 
+
 	// Custom Slider
 	wp_enqueue_style( 'bxslider-css', 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css', array(), _S_VERSION );
 	wp_style_add_data( 'bxslider-css', 'rtl', 'replace' );
-
+	
+	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), _S_VERSION );
 	wp_enqueue_script( 'bxslider-js', 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js', array(), _S_VERSION, true );
 
 	// Styles
