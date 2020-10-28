@@ -10,21 +10,28 @@
  */
 
 ?>
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'extant-demo' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'extant-demo' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'extant-demo' ), 'extant-demo', '<a href="https://github.com/viscosho/extant">Virginia Garcia</a>' );
-				?>
-		</div><!-- .site-info -->
+	<div class="color-border"></div>
+	<footer id="colophon" class="site-footer footer">
+		<div class="container">
+            	<div class="infooter">
+				<p class="copyright">
+					<?php
+					printf(
+						/* Translators: 1: year */
+						esc_html__( 'Copyright © Extant %1$s', 'extant-demo' ),
+						extant_current_year()
+					);
+					?>
+					</p>
+            	</div>
+            <ul class="socialmedia">
+                <li><a href=""><i class="icon-twitter"></i></a></li>
+                <li><a href=""><i class="icon-facebook"></i></a></li>
+                <li><a href=""><i class="icon-dribbble"></i></a></li>
+                <li><a href=""><i class="icon-linkedin"></i></a></li>
+                <li><a href=""><i class="icon-instagram"></i></a></li>
+            </ul>
+            </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

@@ -1118,7 +1118,7 @@ table {
 }
 
 .color-border {
-	background: url(images/color_border.jpg) repeat-x scroll center top;
+	background: url(assets/img/color_border.jpg) repeat-x scroll center top;
 	width: 100%;
 	float: left;
 	display: block;

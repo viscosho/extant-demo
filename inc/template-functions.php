@@ -6,6 +6,16 @@
  */
 
 /**
+ * Get Current Year
+ *
+ * @param [type] $atts
+ * @return void
+ */
+function extant_current_year() {
+	return date('Y');
+}
+
+/**
  * Adds custom classes to the array of body classes.
  *
  * @param array $classes Classes for the body element.

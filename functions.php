@@ -140,6 +140,10 @@ add_action( 'widgets_init', 'extant_demo_widgets_init' );
  * Enqueue scripts and styles.
  */
 function extant_demo_scripts() {
+
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/vendor/css/font-awesome.css', array(), _S_VERSION );
+	wp_style_add_data( 'fontawesome', 'rtl', 'replace' );
+
 	wp_enqueue_style( 'extant-demo-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'extant-demo-style', 'rtl', 'replace' );
 
