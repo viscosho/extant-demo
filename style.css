@@ -941,22 +941,10 @@ textarea {
 --------------------------------------------- */
 /* CSS Document */
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+ v2.0 | 20110126
+ License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -967,8 +955,7 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
@@ -984,7 +971,11 @@ blockquote, q {
 	quotes: none;
 }
 
-blockquote:before, blockquote:after,
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+
 q:before, q:after {
 	content: '';
 	content: none;
@@ -1016,7 +1007,7 @@ table {
 	color: #1C97CA;
 	font-size: 40px;
 	font-weight: 100;
-	padding: 20px 0px;
+	padding: 20px0;
 	display: block;
 	letter-spacing: 4px;
 	text-transform: uppercase;
@@ -1053,7 +1044,7 @@ table {
 
 .banner {
 	background: url(images/picjumbo-bg5.png) no-repeat fixed 0% 0%/cover;
-	padding: 150px 0px;
+	padding: 150px0;
 	cursor: default;
 }
 
@@ -1132,13 +1123,13 @@ table {
 .desc {
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
-	padding: 80px 0px;
+	padding: 80px0;
 }
 
 .desc h2 {
 	font-size: 30px;
 	font-weight: 600;
-	padding: 15px 0px;
+	padding: 15px0;
 }
 
 .desc p {
@@ -1152,7 +1143,7 @@ table {
 }
 
 .features {
-	padding: 80px 0px;
+	padding: 80px0;
 	background-color: #24436d;
 	float: left;
 	width: 100%;
@@ -1162,7 +1153,7 @@ table {
 	text-align: center;
 }
 
-h3.text-head {
+.text-head {
 	color: #1c97ca;
 	font-size: 27px;
 	font-weight: 500;
@@ -1180,7 +1171,7 @@ p.box-desc {
 }
 
 .features-section ul {
-	margin: 50px 0px;
+	margin: 50px0;
 }
 
 .features-section ul li {
@@ -1229,7 +1220,7 @@ p.box-desc {
 }
 
 .stories {
-	padding: 80px 0px;
+	padding: 80px0;
 	float: left;
 	width: 100%;
 	background: #f1f1f1;
@@ -1237,7 +1228,7 @@ p.box-desc {
 
 .stories-section ul li {
 	width: 318px;
-	margin: 40px 20px 0px;
+	margin: 40px 20px0;
 	border-radius: 5px;
 	background-color: #fff;
 	float: left;
@@ -1265,7 +1256,7 @@ p.box-desc {
 	border-bottom-right-radius: 5px;
 	border-top: none;
 	text-align: center;
-	padding: 10px 0px 20px;
+	padding: 10px0 20px;
 }
 
 .story-box h4 {
@@ -1285,11 +1276,11 @@ p.box-desc {
 }
 
 .stories-section ul li:hover {
-	box-shadow: 0px 0px 6px 0px #ccc;
+	box-shadow: 00 6px0 #ccc;
 }
 
 .contact {
-	padding: 80px 0px;
+	padding: 80px0;
 	width: 100%;
 	float: left;
 	font-family: 'Open Sans', sans-serif;
@@ -1360,7 +1351,7 @@ button.submit {
 	transition: background 0.3s ease-in;
 	cursor: pointer;
 	display: block;
-	margin: 30px auto 0px;
+	margin: 30px auto0;
 	border-radius: 5px;
 }
 
@@ -1368,12 +1359,7 @@ button.submit:hover {
 	background: #888;
 }
 
-form input:focus {
-	border: 2px solid #888;
-	background-color: #fff;
-}
-
-form textarea:focus {
+form input:focus, form textarea:focus {
 	border: 2px solid #888;
 	background-color: #fff;
 }
@@ -1382,7 +1368,7 @@ form textarea:focus {
 	width: 100%;
 	background-color: #373A42;
 	float: left;
-	padding: 50px 0px;
+	padding: 50px0;
 	text-align: center;
 }
 
@@ -1478,7 +1464,7 @@ ul.socialmedia li a {
 
 .responsive-menu-button {
 	float: right;
-	padding: 24px 0px;
+	padding: 24px0;
 }
 
 #mobile-header {
@@ -1494,7 +1480,7 @@ ul.socialmedia li a {
 	.container, .wp-block-group__inner-container {
 		width: 1040px;
 		margin: 0 auto;
-		padding: 0px 20px;
+		padding: 0 20px;
 	}
 	.features-section ul li {
 		width: 346px;
@@ -1514,7 +1500,7 @@ ul.socialmedia li a {
 		margin: 0 auto;
 	}
 	.banner {
-		padding: 100px 0px;
+		padding: 100px0;
 	}
 	.big-text {
 		font-size: 22px;
@@ -1524,7 +1510,7 @@ ul.socialmedia li a {
 	}
 	.small-text {
 		width: 85%;
-		margin: 0px auto;
+		margin: 0 auto;
 		font-size: 16px;
 	}
 	.desc h2 {
@@ -1553,7 +1539,7 @@ ul.socialmedia li a {
 		margin: 0 auto;
 	}
 	.banner {
-		padding: 140px 0px;
+		padding: 140px0;
 	}
 	.big-text {
 		font-size: 22px;
@@ -1563,7 +1549,7 @@ ul.socialmedia li a {
 	}
 	.small-text {
 		width: 85%;
-		margin: 0px auto;
+		margin: 0 auto;
 		font-size: 16px;
 	}
 	.desc h2 {
@@ -1590,10 +1576,10 @@ ul.socialmedia li a {
 	.container, .wp-block-group__inner-container {
 		width: 600px;
 		margin: 0 auto;
-		padding: 0px 20px;
+		padding: 0 20px;
 	}
 	.banner {
-		padding: 140px 0px;
+		padding: 140px0;
 	}
 	.big-text {
 		font-size: 20px;
@@ -1608,7 +1594,7 @@ ul.socialmedia li a {
 		line-height: 35px;
 	}
 	.desc {
-		padding: 60px 0px;
+		padding: 60px0;
 	}
 	.desc h2 {
 		font-size: 22px;
@@ -1629,14 +1615,8 @@ ul.socialmedia li a {
 		float: none;
 		margin: 40px auto;
 	}
-	.features {
-		padding: 140px 0px;
-	}
-	.stories {
-		padding: 140px 0px;
-	}
-	.contact {
-		padding: 140px 0px;
+	.features, .stories, .contact {
+		padding: 140px0;
 	}
 }
 
@@ -1644,10 +1624,10 @@ ul.socialmedia li a {
 	.container, .wp-block-group__inner-container {
 		width: 440px;
 		margin: 0 auto;
-		padding: 0px 20px;
+		padding: 0 20px;
 	}
 	.banner {
-		padding: 140px 0px;
+		padding: 140px0;
 	}
 	.big-text {
 		font-size: 20px;
@@ -1662,7 +1642,7 @@ ul.socialmedia li a {
 		line-height: 35px;
 	}
 	.desc {
-		padding: 60px 0px;
+		padding: 60px0;
 	}
 	.desc h2 {
 		font-size: 22px;
@@ -1684,14 +1664,8 @@ ul.socialmedia li a {
 		float: none;
 		margin: 40px auto;
 	}
-	.features {
-		padding: 140px 0px;
-	}
-	.stories {
-		padding: 140px 0px;
-	}
-	.contact {
-		padding: 140px 0px;
+	.features, .stories, .contact {
+		padding: 140px0;
 	}
 }
 
@@ -1699,10 +1673,10 @@ ul.socialmedia li a {
 	.container, .wp-block-group__inner-container {
 		width: 280px;
 		margin: 0 auto;
-		padding: 0px 20px;
+		padding: 0 20px;
 	}
 	.banner {
-		padding: 140px 0px 60px;
+		padding: 140px0 60px;
 	}
 	.big-text {
 		font-size: 15px;
@@ -1723,7 +1697,7 @@ ul.socialmedia li a {
 		padding: 15px;
 	}
 	.desc {
-		padding: 60px 0px;
+		padding: 60px0;
 	}
 	.desc h2 {
 		font-size: 22px;
@@ -1733,7 +1707,7 @@ ul.socialmedia li a {
 		width: 100%;
 	}
 	.features {
-		padding: 140px 0px;
+		padding: 140px0;
 	}
 	.features-section ul li {
 		display: block;
@@ -1749,7 +1723,7 @@ ul.socialmedia li a {
 		font-size: 14px;
 	}
 	.stories {
-		padding: 140px 0px;
+		padding: 140px0;
 	}
 	.stories-section ul li {
 		float: none;
@@ -1760,19 +1734,16 @@ ul.socialmedia li a {
 		height: 170px;
 		width: 260px;
 	}
-	.features {
-		padding: 60px 0px;
-	}
-	.stories {
-		padding: 60px 0px;
+	.features, .stories {
+		padding: 60px0;
 	}
 	.contact {
-		padding: 140px 0px;
+		padding: 140px0;
 	}
 	.contact-section {
 		width: 80%;
 	}
-	h3.text-head {
+	.text-head {
 		font-size: 20px;
 	}
 	.menu {
@@ -1791,7 +1762,7 @@ ul.socialmedia li a {
 		position: fixed;
 	}
 	.banner {
-		padding: 160px 0px 80px;
+		padding: 160px0 80px;
 	}
 	.menu {
 		display: none;

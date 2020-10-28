@@ -54,7 +54,7 @@ class ExtantDemo_Movies {
 				'slug' => 'movie',
 			),
 			'capability_type'    => 'post',
-			'has_archive'        => 'movie',
+			'has_archive'        => 'movies',
 			'hierarchical'       => false,
 			'menu_position'      => null,
 			'supports'           => array(
