@@ -156,13 +156,24 @@ add_action( 'widgets_init', 'extant_demo_widgets_init' );
  */
 function extant_demo_scripts() {
 
+	// Font awesome
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/vendor/css/font-awesome.css', array(), _S_VERSION );
 	wp_style_add_data( 'fontawesome', 'rtl', 'replace' );
 
+	// Custom Slider
+	wp_enqueue_style( 'bxslider-css', 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css', array(), _S_VERSION );
+	wp_style_add_data( 'bxslider-css', 'rtl', 'replace' );
+
+	wp_enqueue_script( 'bxslider-js', 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js', array(), _S_VERSION, true );
+
+	// Styles
 	wp_enqueue_style( 'extant-demo-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'extant-demo-style', 'rtl', 'replace' );
 
+	// Scripts
 	wp_enqueue_script( 'extant-demo-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+
+	wp_enqueue_script( 'extant-demo-custom', get_template_directory_uri() . '/js/custom.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -189,6 +200,11 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Extra additions.
+ */
+require get_template_directory() . '/inc/extras.php';
 
 /**
  * Load Jetpack compatibility file.

@@ -1485,6 +1485,11 @@ ul.socialmedia li a {
 	display: none;
 }
 
+.bx-wrapper {
+	box-shadow: none;
+	margin-bottom: 0;
+}
+
 @media (min-width: 1080px) and (max-width: 1200px) {
 	.container, .wp-block-group__inner-container {
 		width: 1040px;
